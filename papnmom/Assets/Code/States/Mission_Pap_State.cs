@@ -1,17 +1,15 @@
-﻿using UnityEngine;
-using Assets.Code.Interfaces;
-using UnityEngine.UI;
-using System.Collections;
+﻿using Assets.Code.Interfaces;
+using UnityEngine;
 
 namespace Assets.Code.States
 {
-	public class PlayState : IStateBase 
+    public class Mission_Pap_State : IStateBase 
 	{
 		private StateMachine _stateManager;
         private AudioManager _audioManager;
         private CanvasManager _canvasManager;
 		
-		public PlayState (StateMachine managerRef)
+		public Mission_Pap_State (StateMachine managerRef)
 		{
 			_stateManager = managerRef;
             _audioManager = _stateManager._AudioManager;

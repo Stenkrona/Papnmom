@@ -77,12 +77,14 @@
   <ItemGroup>
     <Compile Include="Assets\Code\Interfaces\IStateBase.cs" />
     <Compile Include="Assets\Code\Scripts\AudioManager\AudioManager.cs" />
+    <Compile Include="Assets\Code\Scripts\ButtonFunctions.cs" />
     <Compile Include="Assets\Code\Scripts\CanvasManager\CanvasManager.cs" />
     <Compile Include="Assets\Code\Scripts\HQ.cs" />
     <Compile Include="Assets\Code\Scripts\StateMachines\StateMachine.cs" />
     <Compile Include="Assets\Code\Scripts\Text\Txt_Blink.cs" />
     <Compile Include="Assets\Code\States\MainMenuState.cs" />
-    <Compile Include="Assets\Code\States\PlayState.cs" />
+    <Compile Include="Assets\Code\States\Mission_Mom_State.cs" />
+    <Compile Include="Assets\Code\States\Mission_Pap_State.cs" />
     <Compile Include="Assets\Code\player\locomotion.cs" />
   </ItemGroup>
   <ItemGroup>
