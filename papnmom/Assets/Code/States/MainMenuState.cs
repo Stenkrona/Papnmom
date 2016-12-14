@@ -8,9 +8,7 @@ namespace Assets.Code.States
 		private StateMachine _stateManager;
         private AudioManager _audioManager;
         private CanvasManager _canvasManager;
-        private bool splashScreen;
-
-		
+        private bool anykeypressed;
 
 		public MainMenuState (StateMachine managerRef)
 		{
@@ -18,15 +16,17 @@ namespace Assets.Code.States
             _audioManager = _stateManager._AudioManager;
             _canvasManager = _stateManager._CanvasManager;
 
+            _canvasManager.SetActivePanel("splashscreen");
 			
 			Debug.Log("MainMenuState Constructed");
 		}
 		public void StateUpdate()
 		{
-			if(Input.anyKeyDown)
+			if(Input.anyKeyDown && !anykeypressed)
                 {
-                 _canvasManager.SplashScreen.SetActive(false);
-                 _canvasManager.MainMenu.SetActive(true);
+                _canvasManager.SetActivePanel("mainmenu");
+                _canvasManager.SetActiveMainMenuLayer("stepone");
+                anykeypressed = true;
                 }
 			
 
