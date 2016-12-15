@@ -1,7 +1,19 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:papnmom/Assets/Resources/Help.meta~HEAD
 guid: 3628e4b6e725a4be2bd8067b06f4a6f9
 folderAsset: yes
 timeCreated: 1480275276
+=======
+<<<<<<< HEAD
+guid: 3a75ca2056f860e438580039c9524bbb
+folderAsset: yes
+timeCreated: 1481228749
+=======
+guid: 455f0a0437775174697631aee556c78c
+folderAsset: yes
+timeCreated: 1480278671
+>>>>>>> master
+>>>>>>> master:papnmom/Assets/Code/Scripts.meta
 licenseType: Free
 DefaultImporter:
   userData: 
