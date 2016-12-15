@@ -18,7 +18,7 @@ public class orbit : MonoBehaviour {
 	}
 
 	void getInput(){
-		input = Input.GetAxisRaw ("Horizontal");
+		input = Input.GetAxisRaw ("orbit");
 	}
 
 	void setPosition(){
