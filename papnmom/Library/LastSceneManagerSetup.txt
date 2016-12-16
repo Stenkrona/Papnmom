@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/ArnesTestingGrounds.unity
+- path: Assets/Scenes/Mission_One.unity
   isLoaded: 1
   isActive: 1
