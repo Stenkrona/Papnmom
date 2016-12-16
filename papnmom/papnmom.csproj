@@ -79,7 +79,9 @@
     <Compile Include="Assets\Code\Scripts\AudioManager\AudioManager.cs" />
     <Compile Include="Assets\Code\Scripts\ButtonFunctions.cs" />
     <Compile Include="Assets\Code\Scripts\CanvasManager\CanvasManager.cs" />
+    <Compile Include="Assets\Code\Scripts\FruitRain.cs" />
     <Compile Include="Assets\Code\Scripts\HQ.cs" />
+    <Compile Include="Assets\Code\Scripts\SelfDestruct.cs" />
     <Compile Include="Assets\Code\Scripts\StateMachines\StateMachine.cs" />
     <Compile Include="Assets\Code\Scripts\Text\PrintText.cs" />
     <Compile Include="Assets\Code\Scripts\Text\Txt_Blink.cs" />

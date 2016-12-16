@@ -6,8 +6,9 @@ public class ButtonFunctions : MonoBehaviour {
     private CanvasManager _canvasManager;
     private bool questioningPlayer;
     private bool playerAwnser;
-    private bool missionPaps;
     private bool playerHasAwnserd;
+
+    private int mission;
 
     public bool debugLog;
 
@@ -30,42 +31,27 @@ public class ButtonFunctions : MonoBehaviour {
     }
     public void Yes()
     {
-        playerHasAwnserd = true;
+        SceneManager.LoadScene(mission);
     }
     public void No()
     {
-        playerAwnser = false;
+        questioningPlayer = false;
+        _canvasManager.SetActiveMainMenuLayer("steptwo");
     }
-    public void MissionPapsPicked()
+    public void MissionOnePicked()
     {
-        missionPaps = true;
+        mission = 1;
         questioningPlayer = true;
         _canvasManager.SetActiveMainMenuLayer("areyousure");
     }
-    public void MissionMomsPicked()
+    public void MissionTwoPicked()
     {
-        missionPaps = false;
+        mission = 2;
         _canvasManager.SetActiveMainMenuLayer("areyousure");
     }
     
     private void Update()
     {
-        if(questioningPlayer)
-        {
-            if (debugLog) Debug.Log("Questioning Player");
-            if(playerAwnser && playerHasAwnserd)
-            {
-                if (missionPaps)
-                    SceneManager.LoadScene(1);
-                else
-                    SceneManager.LoadScene(2);
-            }
-            else if(!playerAwnser && playerHasAwnserd)
-            {
-                questioningPlayer = false;
-                _canvasManager.SetActiveMainMenuLayer("steptwo");
-            }        
-
-        }
+       
     }
 }
