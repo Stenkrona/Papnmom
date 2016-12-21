@@ -44,6 +44,10 @@ public class locomotion : MonoBehaviour {
 		transform.position += new Vector3 (velocity.x,velocity.y,0) * speed * Time.deltaTime;
 	}
 
+	void OnFood(){
+		print ("hello!");
+	}
+
 	// Update is called once per frame
 	void Update () {
 		getInput ();

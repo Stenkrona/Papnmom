@@ -7,6 +7,7 @@ public class orbit : MonoBehaviour {
 	public Transform target;
 
 	public float speed = 10;
+	public float distance = 0.3f;
 
 	float input;
 
@@ -26,7 +27,7 @@ public class orbit : MonoBehaviour {
 			offset += input * Time.deltaTime * speed;
 		}
 
-		transform.position = target.position + new Vector3 (Mathf.Cos (offset), Mathf.Sin (offset), 0);
+		transform.position = target.position + new Vector3 (Mathf.Cos (offset), Mathf.Sin (offset), 0) * distance;
 	}
 	
 	// Update is called once per frame
