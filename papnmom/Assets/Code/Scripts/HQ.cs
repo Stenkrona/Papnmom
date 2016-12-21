@@ -1,32 +1,8 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class HQ : MonoBehaviour, IModel {
+public class HQ : MonoBehaviour {
 
-    private ButtonFunctions bf;
-
-
-    void Start() {
+	void Start () {
         DontDestroyOnLoad(gameObject);
-        bf = GetComponent<ButtonFunctions>();
-    }
-
-    public List<IView> listeners
-    {
-        get
-        {
-            return listeners;
-        }
-
-        set
-        {
-            listeners = value;
-        }
-    }
-
-    public void RegisterListener(IView listener)
-    {
-        listeners.Add(listener);
-    }
-    public ButtonFunctions BF {get{return bf;} set{bf = value;}}
+	}
 }

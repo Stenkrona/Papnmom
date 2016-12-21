@@ -66,7 +66,6 @@ public class CanvasManager : MonoBehaviour {
         panels.Add("mainmenu", transform.GetChild(1).gameObject);
         panels.Add("ingame", transform.GetChild(2).gameObject);
         panels.Add("pause", transform.GetChild(3).gameObject);
-        panels.Add("hud", transform.GetChild(4).gameObject);
 
         if (debugLog) Debug.Log("PanelLayerSetUp Done");
     }
