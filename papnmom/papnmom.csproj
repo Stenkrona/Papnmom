@@ -52,9 +52,6 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -70,9 +67,6 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.VR">
       <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
     </Reference>
@@ -81,36 +75,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Code\Interfaces\IController.cs" />
+    <Compile Include="Assets\Code\Interfaces\IModel.cs" />
     <Compile Include="Assets\Code\Interfaces\IStateBase.cs" />
+    <Compile Include="Assets\Code\Interfaces\IView.cs" />
     <Compile Include="Assets\Code\Scripts\AudioManager\AudioManager.cs" />
     <Compile Include="Assets\Code\Scripts\ButtonFunctions.cs" />
     <Compile Include="Assets\Code\Scripts\CanvasManager\CanvasManager.cs" />
     <Compile Include="Assets\Code\Scripts\FruitRain.cs" />
     <Compile Include="Assets\Code\Scripts\HQ.cs" />
     <Compile Include="Assets\Code\Scripts\SelfDestruct.cs" />
+    <Compile Include="Assets\Code\Scripts\StateMachines\GamePlaySM.cs" />
     <Compile Include="Assets\Code\Scripts\StateMachines\StateMachine.cs" />
     <Compile Include="Assets\Code\Scripts\Text\PrintText.cs" />
     <Compile Include="Assets\Code\Scripts\Text\Txt_Blink.cs" />
     <Compile Include="Assets\Code\States\MainMenuState.cs" />
     <Compile Include="Assets\Code\States\Mission_One.cs" />
     <Compile Include="Assets\Code\States\Mission_Two.cs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+    <Compile Include="Assets\Code\States\PauseState.cs" />
+    <Compile Include="Assets\Code\States\PlayingState.cs" />
     <Compile Include="Assets\Code\food\FoodBehaviour.cs" />
     <Compile Include="Assets\Code\food\SpawnFood.cs" />
-=======
->>>>>>> parent of 3a06645... massor
-=======
->>>>>>> parent of 3a06645... massor
-=======
->>>>>>> parent of 3a06645... massor
-=======
->>>>>>> parent of 3a06645... massor
-=======
->>>>>>> parent of 3a06645... massor
     <Compile Include="Assets\Code\player\locomotion.cs" />
     <Compile Include="Assets\Code\player\orbit.cs" />
   </ItemGroup>
