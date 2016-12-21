@@ -14,7 +14,7 @@ namespace Assets.Code.States
 			_stateManager = managerRef;
             _audioManager = _stateManager._AudioManager;
             _canvasManager = _stateManager._CanvasManager;
-            _audioManager.PlaySong("supermarket");
+            _audioManager.PlaySong();
 			
 			Debug.Log("PlayState Constructed");
 		}
