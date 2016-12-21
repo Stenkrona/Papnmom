@@ -56,6 +56,8 @@
      <Compile Include="Assets\Code\States\MainMenuState.cs" />
      <Compile Include="Assets\Code\States\Mission_Mom_State.cs" />
      <Compile Include="Assets\Code\States\Mission_Pap_State.cs" />
+     <Compile Include="Assets\Code\food\FoodBehaviour.cs" />
+     <Compile Include="Assets\Code\food\SpawnFood.cs" />
      <Compile Include="Assets\Code\player\locomotion.cs" />
      <Compile Include="Assets\Code\player\orbit.cs" />
      <None Include="Assets\Resources\Fonts\Fonts\open-sans\Apache License.txt" />
